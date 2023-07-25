@@ -16,8 +16,11 @@ logging.basicConfig(
 
 )
 
-# Add a FileHandler to the root logger
-file_handler = logging.FileHandler(LOG_FILE_PATH)
-file_handler.setLevel(logging.INFO)
+if __name__ == "__main__":
+    logging.info("LOgging has started")
 
-logging.getLogger('').addHandler(file_handler)
+# Add a FileHandler to the root logger
+# file_handler = logging.FileHandler(LOG_FILE_PATH)
+# file_handler.setLevel(logging.INFO)
+
+# logging.getLogger('').addHandler(file_handler)
